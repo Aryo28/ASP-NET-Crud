@@ -9,13 +9,14 @@ namespace AspNetAspxCRUD
 {
     public class Alumnos
     {
-        // Definidas de esta forma, actuan como propiedades del objeto
+        // Class properties
 
         public int id;
         public string nome;
+        public string last_name;
         public int idade;
         public int altura;
-        public string last_name;
+   
 
         public bool gravarPessoa()
         {
@@ -31,14 +32,10 @@ namespace AspNetAspxCRUD
             cmd.Transaction = tran;
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "insert into students2 values (@nombre, @edad, @altura, @last_name)";
-            cmd.Parameters.Add("@nombre", SqlDbType.VarChar);
-            cmd.Parameters.Add("@edad", SqlDbType.Int);
-            cmd.Parameters.Add("@altura", SqlDbType.Int);
-            cmd.Parameters.Add("@last_name", SqlDbType.VarChar);
-            cmd.Parameters[0].Value = nome;
-            cmd.Parameters[1].Value = idade;
-            cmd.Parameters[2].Value = altura;
-            cmd.Parameters[3].Value = last_name;
+            cmd.Parameters.Add("@nombre", SqlDbType.VarChar).Value = nome;
+            cmd.Parameters.Add("@edad", SqlDbType.Int).Value = idade;
+            cmd.Parameters.Add("@altura", SqlDbType.Int).Value = altura;
+            cmd.Parameters.Add("@last_name", SqlDbType.VarChar).Value = last_name;
 
             try
             {
@@ -71,8 +68,7 @@ namespace AspNetAspxCRUD
             cmd.Transaction = tran;
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "delete from students2 where id = @id";
-            cmd.Parameters.Add("@id", SqlDbType.Int);
-            cmd.Parameters[0].Value = id;
+            cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
 
             try
             {
@@ -104,17 +100,12 @@ namespace AspNetAspxCRUD
             cmd.Connection = cn;
             cmd.Transaction = tran;
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "update students2 set nombre = @nombre, edad = @edad, altura = @altura where id = @id, last_name = @last_name ";
-            cmd.Parameters.Add("@nombre", SqlDbType.VarChar);
-            cmd.Parameters.Add("@edad", SqlDbType.Int);
-            cmd.Parameters.Add("@altura", SqlDbType.Int);
-            cmd.Parameters.Add("@id", SqlDbType.Int);
-            cmd.Parameters.Add("@last_name", SqlDbType.VarChar);
-            cmd.Parameters[0].Value = nome;
-            cmd.Parameters[1].Value = idade;
-            cmd.Parameters[2].Value = altura;
-            cmd.Parameters[3].Value = id;
-            cmd.Parameters[4].Value = last_name;
+            cmd.CommandText = "update students2 set name = @nombre, age = @edad, height = @altura, last_name = @last_name where id = @id";
+            cmd.Parameters.Add("@nombre", SqlDbType.VarChar).Value = nome;
+            cmd.Parameters.Add("@edad", SqlDbType.Int).Value = idade;
+            cmd.Parameters.Add("@altura", SqlDbType.Int).Value = altura;
+            cmd.Parameters.Add("@last_name", SqlDbType.VarChar).Value = last_name;
+            cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
 
             try
             {
@@ -125,6 +116,7 @@ namespace AspNetAspxCRUD
             catch (Exception e)
             {
                 tran.Rollback();
+                throw;
                 return false;
             }
             finally
@@ -171,5 +163,6 @@ namespace AspNetAspxCRUD
                 bd.cerrarconexion();
             }
         }
+
     }
 }

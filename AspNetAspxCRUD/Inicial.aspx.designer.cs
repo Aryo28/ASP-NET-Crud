@@ -24,6 +24,24 @@ namespace AspNetAspxCRUD
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// Label4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label4;
+
+        /// <summary>
+        /// nameLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label nameLabel;
+
+        /// <summary>
         /// txbNome control.
         /// </summary>
         /// <remarks>
@@ -31,6 +49,51 @@ namespace AspNetAspxCRUD
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txbNome;
+
+        /// <summary>
+        /// RegularExpressionValidatorName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorName;
+
+        /// <summary>
+        /// Label1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
+
+        /// <summary>
+        /// txbLastName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txbLastName;
+
+        /// <summary>
+        /// RegularExpressionValidatorLastName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorLastName;
+
+        /// <summary>
+        /// Label2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
         /// txbIdade control.
@@ -42,6 +105,24 @@ namespace AspNetAspxCRUD
         protected global::System.Web.UI.WebControls.TextBox txbIdade;
 
         /// <summary>
+        /// RegularExpressionValidatorAge control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorAge;
+
+        /// <summary>
+        /// Label3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label3;
+
+        /// <summary>
         /// txbAltura control.
         /// </summary>
         /// <remarks>
@@ -51,13 +132,13 @@ namespace AspNetAspxCRUD
         protected global::System.Web.UI.WebControls.TextBox txbAltura;
 
         /// <summary>
-        /// txbLastName control.
+        /// RegularExpressionValidatorHeight control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txbLastName;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorHeight;
 
         /// <summary>
         /// btnGravar control.
@@ -96,15 +177,6 @@ namespace AspNetAspxCRUD
         protected global::System.Web.UI.WebControls.Button btnConsultar;
 
         /// <summary>
-        /// btnDataReader control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnDataReader;
-
-        /// <summary>
         /// lblDataReader control.
         /// </summary>
         /// <remarks>
@@ -114,13 +186,13 @@ namespace AspNetAspxCRUD
         protected global::System.Web.UI.WebControls.Label lblDataReader;
 
         /// <summary>
-        /// txbIdExcluir control.
+        /// DropDownListUsers control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txbIdExcluir;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownListUsers;
 
         /// <summary>
         /// btnExcluir control.
@@ -150,6 +222,15 @@ namespace AspNetAspxCRUD
         protected global::System.Web.UI.WebControls.TextBox txbIdAlt;
 
         /// <summary>
+        /// RegularExpressionValidatorAltID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorAltID;
+
+        /// <summary>
         /// txbNomeAlt control.
         /// </summary>
         /// <remarks>
@@ -157,6 +238,33 @@ namespace AspNetAspxCRUD
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txbNomeAlt;
+
+        /// <summary>
+        /// RegularExpressionValidatorAltName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorAltName;
+
+        /// <summary>
+        /// txbLastAlt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txbLastAlt;
+
+        /// <summary>
+        /// RegularExpressionValidatorAltLstName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorAltLstName;
 
         /// <summary>
         /// txbIdadeAlt control.
@@ -168,6 +276,15 @@ namespace AspNetAspxCRUD
         protected global::System.Web.UI.WebControls.TextBox txbIdadeAlt;
 
         /// <summary>
+        /// RegularExpressionValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+
+        /// <summary>
         /// txbAlturaAlt control.
         /// </summary>
         /// <remarks>
@@ -175,6 +292,15 @@ namespace AspNetAspxCRUD
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txbAlturaAlt;
+
+        /// <summary>
+        /// RegularExpressionValidatorAltHeight control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorAltHeight;
 
         /// <summary>
         /// btnAlterar control.
@@ -193,5 +319,14 @@ namespace AspNetAspxCRUD
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblAlterou;
+
+        /// <summary>
+        /// updateExc control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label updateExc;
     }
 }

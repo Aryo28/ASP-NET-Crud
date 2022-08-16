@@ -7,10 +7,8 @@ using System.Web;
 
 namespace AspNetAspxCRUD
 {
-    /*CREATE LOGIN meuLogin WITH PASSWORD='senha';
-        CREATE USER meuLogin FROM LOGIN meuLogin;
-        EXEC SP_ADDROLEMEMBER 'DB_DATAREADER', 'meuLogin';
-        EXEC SP_ADDROLEMEMBER 'DB_DATAWRITER', 'meuLogin'*/
+
+    //DB Connection
 
     public class Conex
     {
